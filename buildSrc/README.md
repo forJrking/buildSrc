@@ -1,20 +1,3 @@
-### 相关内容
-* 组件化、支持模块单独运行
-* androidx
-* mvvm
-* kotlin
-* koin
-* jetpack(livedata、viewmodel、lifecycle、viewbinding、...)
-* buildsrc
-* coroutines
-* liveeventbus
-* ...
-
-[项目用到的依赖库](https://github.com/panyy/mvvm-jetpack-sample/blob/master/buildSrc/src/main/java/Dependencies.kt)
-
-### APK下载体验
-[https://www.pgyer.com/Ispr](https://www.pgyer.com/Ispr)
-
 ### 如何检查依赖库的版本更新
 在项目的根目录下执行以下命令。
 ```
@@ -42,3 +25,14 @@ Gradle release-candidate updates:
 * 支持 gradle-wrapper 最新版本检查
 * 支持多模块的依赖库最新版本检查
 * 支持多项目的依赖库最新版本检查
+
+### 使用
+
+```
+plugins {
+    id "com.common.plugin.lib"
+}
+dependencies {
+    implementation project(':common-res')
+}
+```

@@ -1,6 +1,0 @@
-include ':app'
-include ':module-login'
-include ':module-main'
-include ':common-core'
-include ':common-res'
-include ':module-web'
