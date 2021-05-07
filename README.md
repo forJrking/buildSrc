@@ -29,6 +29,18 @@ Gradle release-candidate updates:
 ### 使用
 
 ```
+根目录 build
+apply from: './buildSrc/build_version.gradle'
+
+//依赖方式
+dependencies {
+    api project(':common-core')
+    api Deps.tbssdk
+    api Deps.vlayout
+    api Deps.smartkey
+    api Deps.cardview
+}
+
 plugins {
     id "com.common.plugin.lib"
 }
